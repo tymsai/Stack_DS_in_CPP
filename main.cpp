@@ -1,20 +1,22 @@
 #include<iostream>
 #include<string>
+#define N 5
 using namespace std;
 
 class Stack{
 private:
-    int top=-1, array[5], var1, var2;
+    int top=-1, array[N], var1, var2;
 public:
     Stack(){
         top = -1;
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < N; i++){
         array[i] = 0;
       }
     }
     bool isfull(){
-        if(top>=4)
+        if(top>=(N-1)){
         return true;
+        }
         else
         return false;
     }
@@ -56,7 +58,7 @@ public:
             cout<<"\nstack is empty\n\n";
         }
         else 
-        for(int i = 4; i >= 0; i--){
+        for(int i = (N-1); i >= 0; i--){
         cout << array[i] << endl;
         }
     }
@@ -71,7 +73,6 @@ public:
         }
     }
 };
-
 int main(){
     Stack obj;
     cout<<"Welcome to Stack Data Structure Program"<<endl;
@@ -110,6 +111,7 @@ int main(){
         obj.edit();
         break;
     case 8:
+        cout<<"Thank you for using the program\n";
         return 0;
         break;
     default:
