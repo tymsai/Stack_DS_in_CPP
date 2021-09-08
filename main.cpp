@@ -5,7 +5,7 @@ using namespace std;
 
 class Stack{
 private:
-    int top=-1, array[N], var1, var2;
+    int top=-1, array[N], var1, var2, peekval;
 public:
     Stack(){
         top = -1;
@@ -50,8 +50,11 @@ public:
         if(isempty()){
             cout<<"\nstack is empty\n";
         }
-        else 
+        else {
         cout<<"\nenter the index value\n";
+        cin>>peekval;
+        cout<<array[peekval]; 
+        }
     }
     void view(){
         if(isempty()){
