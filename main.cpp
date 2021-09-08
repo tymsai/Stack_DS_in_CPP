@@ -51,7 +51,7 @@ public:
             cout<<"\nstack is empty\n";
         }
         else {
-          cout<<array[top]; 
+          cout<<array[top]<<endl; 
         }
     }
     void view(){
