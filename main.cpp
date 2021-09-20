@@ -75,8 +75,6 @@ public:
     }
 };
 int main(){
-    system("cls");
-    system("color 0a");
     Stack obj;
     cout<<"Welcome to Stack Data Structure Program"<<endl;
     int choice;
